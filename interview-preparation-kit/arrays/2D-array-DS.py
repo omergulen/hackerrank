@@ -9,8 +9,8 @@ import sys
 # Complete the hourglassSum function below.
 def hourglassSum(arr):
     sums = []
-    for i in range(1,5):
-        for j in range(1,5):
+    for i in range(1, (len(arr)-1)):
+        for j in range(1, (len(arr)-1)):
             hgSum = arr[i-1][j-1] + arr[i-1][j] + arr[i-1][j+1] + arr[i][j] + arr[i+1][j-1] + arr[i+1][j] + arr[i+1][j+1]
             sums.append(hgSum)
 
